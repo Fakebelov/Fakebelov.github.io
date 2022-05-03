@@ -71,7 +71,7 @@ background: #344051;
      /* ОБО МНЕ */
 
 .about{
-    float: left;
+   
     width: 100%;
     height: 70%;
     text-align: center;
@@ -112,7 +112,6 @@ background: #344051;
 
 .my_skills{
     background: url(../img/%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B0%20%D1%84%D0%BE%D0%BD%D0%B0.png) center/cover no-repeat;
-    float: left;
     width: 100%;
     height: 55%;
     text-align: center;
@@ -122,8 +121,9 @@ background: #344051;
     font-size: 22px;
     font-weight: bold;
     text-align: center;
-    margin-top: 107px;
-    margin-bottom: 31px;    
+    margin-top: 110px;
+    margin-bottom: 31px;
+    padding-top: 110px;
     color: #263244; 
     text-transform: uppercase;
 }
@@ -152,10 +152,9 @@ background: #344051;
      /* КЕЙСЫ */
 
 .item_keys{
-    float: left;
     width: 100%;
-    height: 100%;
     text-align: center;
+
 }
 .item_keys h2{
     font-size: 22px;
@@ -173,10 +172,10 @@ p#keys{
 }
 .img_keys{
     height: 45%;
-    margin: 0px 0px 110px 0px; 
+    margin: 0px 0px 50px 0px; 
 }
 .keys_info{
-    margin-top 20px;
+    margin-top 0px;
     text-align: left;
     margin-left: 388px;
     float: left;
@@ -209,7 +208,6 @@ p#keys{
     margin-left: 674px;
     text-align: left;
     margin-right: 401px;
-    margin-top 10px;
 }
 .keys_info2 span{
     font-size: 16px;
@@ -227,24 +225,66 @@ p#keys{
     /* Расчет стоимости */
 
 .price{
-    border: 2px solid #6d7682;
-  
-  
+    width: 1920px;
+    height: 850px;
 }
 .price h2{
     text-align: center;
     font-size: 23px;
     color: #1c2534;
     font-weight: 800;
-    margin-top: 100px; 
+    margin-top: 200px; 
     margin-bottom: 60px;
 }
-
+.price h3{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    text-transform: uppercase;   
+}
+.calc_price select{
+    width: 891px;
+    height: 55px;
+    color: #737373;
+    margin-top: 22px;
+    margin-bottom: 49px;
+    padding-left: 24px;
+    background: url(../img/%D0%B2%D1%8B%D0%B1%D0%B5%D1%80%D0%B8%D1%82%D0%B5%20%D0%BF%D1%83%D0%BD%D0%BA%D1%82.png) center/cover no-repeat;
+}
 .calc_price{
     text-align: center;
-    margin: 0px 500px
+    margin: 0px 535px 0px 500px;
 }
+.line{
+    margin-left: 494px;
+    margin-right: 535px;
+}
+.time{
+    color: #1c2534;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 500px;
+    text-align: left;
+    float: left;
+    margin-top: 0px;
+}
+.time p{
+    margin-top:27px
+}
+.time_price{
+    color: #1c2534;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 1368px;
+    margin-right: 535px;
+    text-align: left;
+    margin-top: 0px;
 
+    
+}
+.time_price p{
+    margin-top:27px
+}
     /* Статистика */
 
 .statistic{
@@ -345,10 +385,10 @@ p#keys{
 }
 
 .full_addres{
-    margin-left: 665px;
-    margin-right: 654px;
-    margin-top: 50px; 
+ 
+    margin: 50px 654px 0px 665px;
     text-align: left;
+    height: 150px;
 }
 .addres{
     width: 33%;
@@ -364,7 +404,8 @@ p#keys{
 .email{
     height: 333px;
     width: 868px;
-    margin:39px 593px 168px 593px;
+    margin:0px 593px 0px 593px;
+    text-align: center;
 }
 .email h3{
     font-size: 15px;
@@ -373,9 +414,28 @@ p#keys{
     font-weight: bold;
     text-transform: uppercase;
 }
-
-/* Карта */
-
+.input_text{
+    margin-top: 35px;
+    height: 34px;
+    width: 352px;
+    padding-left: 13px;
+    
+}
+.email p {
+    display: block;
+}
+.send {
+    height: 42px;
+    width: 122px;
+    text-align: center;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    background: none;
+    color: #ffffff;
+    font-size: 11px;
+    padding: 0px 16px;
+    margin: 38px 0px 168px 0px;
+}
 
 /* Автор */
 
