@@ -8,6 +8,11 @@ nav{
 width: 100%;
 height: 60px;
 background: #344051;
+position: fixed;
+}
+main{
+    width:100%;
+    height: 100%;
 }
 .about__me{
     margin: 30px 927px 0px 912px;
@@ -18,6 +23,9 @@ background: #344051;
     line-height: 60px;
     padding-left: 388px;
     float: left;
+    -webkit-animation: comming 2s ease;
+    -o-animation: comming 2s ease;
+    animation:  comming 2s ease;
 }
 .menu {
     float: left;
@@ -26,12 +34,66 @@ background: #344051;
 .menu li{
     float: left;
     line-height: 60px;
-    color: #fff;
+    color: #ffffff;
     margin-right: 40px;
     font-size: 16px;
     text-transform: uppercase;
+    -webkit-animation: topshift 0.4s ease forwards;
+    -o-animation: topshift 0.4s ease forwards;
+    animation: topshift 0.4s ease forwards;
+    opacity: 0;
 }
-    
+.menu li a{
+    transition: all 0.1s;
+    color: white;
+    display: inline-block;
+}
+.menu li a:visited{
+    color: #ffffff;
+}
+.menu li a:hover{
+    color: #e88604;
+}  
+.menu li a:active{
+   transform: scale(1.1);
+}
+.menu li:nth-child(2){
+    animation-delay: 0.3s;
+} 
+.menu li:nth-child(3){
+    animation-delay: 0.6s;
+} 
+.menu li:nth-child(4){
+    animation-delay: 0.9s;
+} 
+.menu li:nth-child(5){
+    animation-delay: 1.2s;
+} 
+.menu li:nth-child(6){
+    animation-delay: 1.5s;
+}    
+  
+
+
+@keyframes comming{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes topshift{
+    from{
+        opacity: 0;
+        margin-top: -80px;
+    }
+    to{
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+
      /* первая страница */
 
 .main{
@@ -45,6 +107,13 @@ background: #344051;
     margin: 432px 0px 0px 404px;
     color: #2c384a;
     text-align: center;
+    opacity: 0;
+    -webkit-animation: titlemove 1s ease forwards;
+    -o-animation: titlemove 1s ease forwards;
+    animation: titlemove 1s ease forwards;
+    -webkit-animation-delay: 1.6s;
+    -o-animation-delay: 1.6s;
+    animation-delay: 1.6s;
 }
 .title__container h1{ 
     font-size: 60px;
@@ -66,14 +135,35 @@ background: #344051;
     font-size: 13px;
     padding: 0px 16px;
     margin: 58px 14px 0px 14px;
+    transition: all 0.2s;
+    transform: scale(1);
 }
 
+.title__container input:hover{
+    background: #344051;
+    color: white;  
+}
+.title__container input:active{
+    transform: scale(1.1);
+}
+
+@keyframes titlemove{
+    from{
+        opacity: 0;
+        margin-left: -500px;
+    }
+    to{
+        opacity: 1;
+        margin-left: 404px;
+    }
+}
+    
      /* ОБО МНЕ */
 
 .about{
    
     width: 100%;
-    height: 70%;
+    height: 716px;
     text-align: center;
 }
 
@@ -106,12 +196,22 @@ background: #344051;
     font-size: 11px;
     padding: 0px 12px;
     margin: 38px 0px 96px 0px;
+    transition: all 0.2s;
+    transform: scale(1);
 }
 
+.about input:hover{
+    background: #344051;
+    color: white;  
+}
+.about input:active{
+    transform: scale(1.1);
+}
      /* ЧТО Я УМЕЮ */
 
 .my_skills{
     background: url(../img/%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B0%20%D1%84%D0%BE%D0%BD%D0%B0.png) center/cover no-repeat;
+    background-attachment: fixed;
     width: 100%;
     height: 55%;
     text-align: center;
@@ -149,6 +249,13 @@ background: #344051;
     font-size 9px;
     color: #3f495a;
 }
+.ddd{
+    transform: scale3d(1, 1, 1);
+    
+}
+.ddd:hover{
+    transform: scale3d(2, 2, 1);
+}
      /* КЕЙСЫ */
 
 .item_keys{
@@ -172,7 +279,13 @@ p#keys{
 }
 .img_keys{
     height: 45%;
-    margin: 0px 0px 50px 0px; 
+    margin: 0px 0px 50px 0px;
+    transition: all 0.3s;
+    transform: scale(1);
+}
+
+.img_keys:hover{
+    transform: scale(1.1);
 }
 .keys_info{
     margin-top 0px;
@@ -203,6 +316,35 @@ p#keys{
     margin-top: 18px;
     margin-bottom: 15px;
     color: #3f495a;
+}
+.keys_info a{
+    font-size 9px;
+    margin-top: 18px;
+    margin-bottom: 15px;
+    transition: all 0.1s;
+    color: skyblue;
+    display: inline-block;
+}
+.keys_info a:visited{
+    color: blueviolet;
+}
+.keys_info a:hover{
+    color: blue;
+}  
+.keys_info a:active{
+   transform: scale(1.1);
+}
+.keys_info input{
+    transition: all 0.2s;
+    transform: scale(1);
+}
+
+.keys_info input:hover{
+    background: #13524d;
+    color: white;  
+}
+.keys_info input:active{
+    transform: scale(1.1);
 }
 .keys_info2{
     margin-left: 674px;
@@ -293,6 +435,8 @@ p#keys{
     height: 500px;
     text-align: center;
     background: url(../img/%D1%84%D0%BE%D0%BDstat.png) center/cover no-repeat;
+    background-attachment: fixed;
+    
 }
 .statistic h2{
     font-size: 22px;
@@ -347,7 +491,12 @@ p#keys{
 }
 .men{
     margin:60px 0px 18px 0px;
+    transform: scale3d(1, 1, 1);
 }
+.men:hover{
+    transform: scale3d(1.5, 1.5, 1);
+}
+
 .feedback p{
     text-align: center;
     color:#243042;
@@ -404,7 +553,7 @@ p#keys{
 .email{
     height: 333px;
     width: 868px;
-    margin:0px 593px 0px 593px;
+    margin:0px 500px 0px 500px;
     text-align: center;
 }
 .email h3{
@@ -435,8 +584,17 @@ p#keys{
     font-size: 11px;
     padding: 0px 16px;
     margin: 38px 0px 168px 0px;
+    transition: all 0.2s;
+    transform: scale(1);
 }
 
+.send:hover{
+    background: #bdbdbd;
+    color: black;  
+}
+.send:active{
+    transform: scale(1.1);
+}
 /* Автор */
 
 .autor{
@@ -450,4 +608,7 @@ p#keys{
     color: #ffffff;
     padding-top: 45px;
     font-weight: 600;
+}
+.img_map{
+    width: 100%;
 }
